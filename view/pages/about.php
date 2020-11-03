@@ -8,7 +8,7 @@
         <div class="card-body text-dark bg-white">
 
             <p class="lead">Este dashboard contém dados de intensidade de chuva, temperatura ambiente e incidência solar. Os dados aqui apresentados são coletados a cada uma hora.</p>
-            <p class="lead">Discentes: Igor da Conceição Damasio, João Peterson Scheffer, Maria Carolina Silva Vanuchi.</p>
+            <p class="lead">Discentes: Igor da Conceição Damasio, João Peterson Scheffer e Maria Carolina Silva Vanuchi.</p>
         </div>
     </div>
 </main>

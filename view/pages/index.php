@@ -15,11 +15,11 @@
           <h5 class="card-title " style="margin-top: 35; ">Temperatura Ambiente (ºC)</h5>
           <div class="row">
          
-            <div class="col">
+            <div class="col col-lg-4 col-md-4 col-sm-4">
               <div id="table"> <?php include("../../config/index/temperatura.php"); ?></div> 
             </div>
             
-            <div class="col">
+            <div class="col col-lg-8 col-md-8 col-sm-8">
               <?php include("../../config/index/grafico_temperatura.php"); ?>
               <div id="chart_temp"></div>
             </div>
@@ -28,11 +28,11 @@
           <h5 class="card-title" style="margin-top: 35; ">Intensidade de Chuva (mm)</h5>
           <div class="row">
           
-            <div class="col">
+            <div class="col col-lg-4 col-md-4 col-sm-4">
               <div id="table"> <?php include("../../config/index/intensidade_chuva.php"); ?></div> 
             </div>
             
-            <div class="col">
+            <div class="col col-lg-8 col-md-8 col-sm-8">
               <?php include("../../config/index/grafico_intensidade_chuva.php"); ?>
               <div id="chart_chuva"></div>
             </div>
@@ -40,11 +40,11 @@
 
           <h5 class="card-title" style="margin-top: 35; ">Incidência Solar (W/m<sup>2</sup>)</h5>
           <div class="row">
-            <div class="col">
+            <div class="col col-lg-4 col-md-4 col-sm-4">
               <div id="table"> <?php include("../../config/index/incidencia_solar.php"); ?></div> 
             </div>
             
-            <div class="col">
+            <div class="col col-lg-8 col-md-8 col-sm-8">
               <?php include("../../config/index/grafico_incidencia_solar.php"); ?>
               <div id="chart_solar"></div>
             </div>
