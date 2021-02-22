@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th scope="col">Hora</th>
-                <th scope="col">Temperatura</th>
+                <th scope="col">Precipitação</th>
             </tr>
         </thead>
         <tbody>
@@ -11,7 +11,7 @@
            <?php foreach($json_str->data as $e) { ?>
                 <tr>   
                     <td><?php echo $e->req_time ?> </td>
-                    <td><?php echo $e->temp ?> </td>
+                    <td><?php echo $e->precipitation ?> </td>
                 </tr>
 
             <?php } ?>

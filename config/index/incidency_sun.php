@@ -3,15 +3,16 @@
         <thead>
             <tr>
                 <th scope="col">Hora</th>
-                <th scope="col">Instantânea</th>
+                <th scope="col">Incidência</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-            <th scope="row"><?php echo date('H:i:s').'<br />'; ?> </th>
-                <td>12.2</td>
-               
-            </tr>
+        <?php foreach($json_str->data as $e) { ?>
+                <tr>   
+                    <td><?php echo $e->req_time ?> </td>
+                    <td><?php echo $e->incidency_sun ?> </td>
+                </tr>
+            <?php } ?>
         </tbody>
     </table>
 </div>
