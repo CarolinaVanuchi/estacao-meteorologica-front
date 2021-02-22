@@ -1,5 +1,5 @@
 <div class="table-responsive-md table-responsive-lg table-responsive-sm">
-    <table class="table table-striped table-hover">
+    <table class="table table-sm table-striped table-hover " font-size: 1rem;>
         <thead>
             <tr>
                 <th scope="col">Hora</th>
@@ -18,5 +18,6 @@
            
         </tbody>
     </table>
+   
 </div>
 
