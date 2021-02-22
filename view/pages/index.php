@@ -16,7 +16,7 @@
         </div>
           
         <div class="card-body text-dark bg-white">
-          <h5 class="card-title " style="margin-top: 35; ">Temperatura Ambiente (ºC)</h5>
+          <h5 class="card-title " style="margin-top: 35; ">Temperatura (ºC)</h5>
           <div class="row">
          
             <div class="col col-lg-4 col-md-4 col-sm-4">

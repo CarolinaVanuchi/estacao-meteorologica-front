@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th scope="col">Hora</th>
-                <th scope="col">Humidade</th>
+                <th scope="col">Sensação Térmica</th>
             </tr>
         </thead>
         <tbody>

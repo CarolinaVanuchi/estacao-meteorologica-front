@@ -7,29 +7,30 @@
         </div>
         <div class="card-body text-dark bg-white">
           <h5 class="card-title">Selecione o Período</h5>
-          
-          <div class="row ">
-            
-            <div class="col col-lg-3 col-md-3 col-sm-3">
-              <label >Data Inicial:</label>
-              <input type="date" name="dataInicial" class="form-control" id="dataInicial" 
-                required oninvalid="this.setCustomValidity('INFORME A DATA INICIAL')"
-                oninput="this.setCustomValidity('')"/> 
-              </div>
+          <form role="form" action="buscar.php" method="POST">
+              <div class="row ">
+                
+                <div class="col col-lg-3 col-md-3 col-sm-3">
+                  <label >Data Inicial:</label>
+                  <input type="date" name="date1" class="form-control" id="date1" 
+                    required oninvalid="this.setCustomValidity('INFORME A DATA INICIAL')"
+                    oninput="this.setCustomValidity('')"/> 
+                  </div>
 
-              <div class="col col-lg-3 col-md-3 col-sm-3">
-              <label >Data Final:</label>
-              <input type="date" name="dataFinal" class="form-control" id="dataFinal"
-                required oninvalid="this.setCustomValidity('INFORME A DATA FINAL')"
-                oninput="this.setCustomValidity('')"/> 
+                  <div class="col col-lg-3 col-md-3 col-sm-3">
+                  <label >Data Final:</label>
+                  <input type="date" name="date2" class="form-control" id="date2"
+                    required oninvalid="this.setCustomValidity('INFORME A DATA FINAL')"
+                    oninput="this.setCustomValidity('')"/> 
+                  </div>
+            </div>
+            
+            <div class="row " style="margin-top: 15; "> 
+              <div class="col col-lg-6 col-md-6col-sm-6">
+                <button type="submit" name="salvar" class="btn btn-info btn-block">Buscar</button> 
               </div>
-        </div>
-        
-        <div class="row " style="margin-top: 15; "> 
-          <div class="col col-lg-6 col-md-6col-sm-6">
-              <button type="button" class="btn btn-info btn-block">Buscar</button>
-          </div>
-        </div>
+            </div>
+        </form>
         </div>
       </div>
     </main>

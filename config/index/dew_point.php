@@ -3,7 +3,7 @@
         <thead>
             <tr>
                 <th scope="col">Hora</th>
-                <th scope="col">Precipitação</th>
+                <th scope="col">Ponto de Orvalho</th>
             </tr>
         </thead>
         <tbody>
