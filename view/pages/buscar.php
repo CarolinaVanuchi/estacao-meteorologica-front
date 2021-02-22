@@ -9,7 +9,8 @@
 
 ?>
  <div id="header"> <?php include("../layout/header.html"); ?> </div> 
-  
+  <?php echo $date1 ?>
+  <?php echo $date2 ?>
   <main role="main" class="container-fluid">
   <div class="card text-white bg-info mb-12">  
        
