@@ -1,6 +1,5 @@
 <?php
-	// $url = "http://192.168.0.150:5505/api/today";
-	$url = "http://9377dcd59f73.ngrok.io/api/historic?date1=2020-01-10&date2=2021-02-20";
+	$url = "http://192.168.0.150:5505/api/today";
 	$json_str = json_decode(file_get_contents($url));
 
 	$output_file = '../../assets/imgs/humidity.png';
