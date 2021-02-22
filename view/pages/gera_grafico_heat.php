@@ -23,7 +23,7 @@
 		$valor	   = $e->heat_index;
 		array_push($data, array('', strtotime($date_time), $valor));
 	}
-	require('../../lib/phplot-6.2.0/phplot.php');
+	
     $plot = new PHPlot();
     $plot->SetImageBorderType('plain');
     $plot->SetPlotType('lines');

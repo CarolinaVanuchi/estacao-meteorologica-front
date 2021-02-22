@@ -23,18 +23,18 @@
 		$valor	   = $e->incidency_sun;
 		array_push($data, array('', strtotime($date_time), $valor));
 	}
-	require('../../lib/phplot-6.2.0/phplot.php');
-    $plot = new PHPlot();
-    $plot->SetImageBorderType('plain');
-    $plot->SetPlotType('lines');
-    $plot->SetDataType('data-data');
-	$plot->SetXLabelType('time', '%Y-%m-%d %H:%M:%S');
-	$plot->SetXDataLabelType('');
-	$plot->SetXLabelAngle(90);
-    $plot->SetDataValues($data);
-    $plot->SetTitle('Incidência Solar');
-    $plot->SetPlotAreaWorld(NULL, 0, NULL, NULL);
-	$plot->SetIsInline(1);
-	$plot->SetOutputFile($output_file);
-    $plot->DrawGraph();
+	
+    $plot_sun = new PHPlot();
+    $plot_sun->SetImageBorderType('plain');
+    $plot_sun->SetPlotType('lines');
+    $plot_sun->SetDataType('data-data');
+	$plot_sun->SetXLabelType('time', '%Y-%m-%d %H:%M:%S');
+	$plot_sun->SetXDataLabelType('');
+	$plot_sun->SetXLabelAngle(90);
+    $plot_sun->SetDataValues($data);
+    $plot_sun->SetTitle('Incidência Solar');
+    $plot_sun->SetPlotAreaWorld(NULL, 0, NULL, NULL);
+	$plot_sun->SetIsInline(1);
+	$plot_sun->SetOutputFile($output_file);
+    $plot_sun->DrawGraph();
 ?>

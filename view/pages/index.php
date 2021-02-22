@@ -2,6 +2,14 @@
   // $url = "http://192.168.0.150:5505/api/today";
   $url = "http://9377dcd59f73.ngrok.io/api/historic?date1=2020-01-01&date2=2021-02-20";
   $json_str = json_decode(file_get_contents($url));
+  
+  require('../../lib/phplot-6.2.0/phplot.php');
+  require_once 'gera_grafico_temp.php';
+  require_once 'gera_grafico_incidency_sun.php';
+  require_once 'gera_grafico_humidity.php';
+  require_once 'gera_grafico_precipitation.php';
+  require_once 'gera_grafico_dew_point.php';
+  require_once 'gera_grafico_heat.php';
 ?>
 <div id="header"> <?php include("../layout/header.html");?> </div> 
 
