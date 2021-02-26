@@ -29,7 +29,7 @@
 	$plot_sun->SetXDataLabelType('');
 	$plot_sun->SetXLabelAngle(90);
     $plot_sun->SetDataValues($data);
-    $plot_sun->SetTitle('Incidência Solar');
+    $plot_sun->SetTitle(utf8_decode('Incidência Solar'));
     $plot_sun->SetPlotAreaWorld(NULL, 0, NULL, NULL);
 	$plot_sun->SetIsInline(1);
 	$plot_sun->SetOutputFile($output_file);

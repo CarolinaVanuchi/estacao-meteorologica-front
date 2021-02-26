@@ -29,7 +29,7 @@
 	$plot->SetXDataLabelType('');
 	$plot->SetXLabelAngle(90);
     $plot->SetDataValues($data);
-    $plot->SetTitle('Sensação Térmica');
+    $plot->SetTitle(utf8_decode('Sensação Térmica'));
     $plot->SetPlotAreaWorld(NULL, 0, NULL, NULL);
 	$plot->SetIsInline(1);
 	$plot->SetOutputFile($output_file);
