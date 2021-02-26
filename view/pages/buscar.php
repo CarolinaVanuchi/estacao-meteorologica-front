@@ -4,7 +4,8 @@
     $date1 = $_POST['date1'];
     $date2 = $_POST['date2'];
 
-    $url = "http://192.168.0.150:5505/api/historic?date1=".$date1."&date2=".$date2."";
+    // $url = "http://192.168.0.150:5505/api/historic?date1=".$date1."&date2=".$date2."";
+    $url = "https://ce90344dcc24.ngrok.io/api/historic?date1=".$date1."&date2=".$date2."";
     $json_str = json_decode(file_get_contents($url));
 
 ?>
