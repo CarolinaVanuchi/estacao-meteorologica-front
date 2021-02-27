@@ -1,6 +1,6 @@
 <?php
   // $url = "http://192.168.0.150:5505/api/today";
-  $url = "https://ce90344dcc24.ngrok.io/api/today";
+  $url = "http://fdc0106d7b2e.ngrok.io/api/today";
   $json_str = json_decode(file_get_contents($url));
   
   require('../../lib/phplot-6.2.0/phplot.php');
