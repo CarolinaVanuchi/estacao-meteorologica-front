@@ -1,15 +1,17 @@
 <?php
-  // $url = "http://192.168.0.150:5505/api/today";
-  $url = "http://fdc0106d7b2e.ngrok.io/api/today";
+  $url = "http://192.168.0.150:5505/api/today";
   $json_str = json_decode(file_get_contents($url));
   
-  require('../../lib/phplot-6.2.0/phplot.php');
-  require_once 'gera_grafico_temp.php';
-  require_once 'gera_grafico_incidency_sun.php';
-  require_once 'gera_grafico_humidity.php';
-  require_once 'gera_grafico_precipitation.php';
-  require_once 'gera_grafico_dew_point.php';
-  require_once 'gera_grafico_heat.php';
+  if (count((array($json_str))) > 1) { 
+    
+    require('../../lib/phplot-6.2.0/phplot.php');
+    require_once 'gera_grafico_temp.php';
+    require_once 'gera_grafico_incidency_sun.php';
+    require_once 'gera_grafico_humidity.php';
+    require_once 'gera_grafico_precipitation.php';
+    require_once 'gera_grafico_dew_point.php';
+    require_once 'gera_grafico_heat.php';
+  }
 ?>
 <div id="header"> <?php include("../layout/header.html");?> </div> 
 
