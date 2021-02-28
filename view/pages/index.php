@@ -1,7 +1,7 @@
 <?php
   $url = "http://192.168.0.150:5505/api/today";
   $json_str = json_decode(file_get_contents($url));
-  
+ 
   if (count((array($json_str))) > 1) { 
     
     require('../../lib/phplot-6.2.0/phplot.php');
