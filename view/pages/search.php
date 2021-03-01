@@ -1,4 +1,4 @@
-<div id="header"> <?php include("../layout/header.html"); ?> </div> 
+<div id="header"> <?php include("../layout/header.php"); ?> </div> 
 
 <main role="main" class="container-fluid">
       <div class="card text-white bg-info mb-12">  

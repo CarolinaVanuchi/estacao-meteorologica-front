@@ -2,7 +2,7 @@
   $url = "http://192.168.0.150:5505/api/today";
   $json_str = json_decode(file_get_contents($url));
  
-  if (count((array($json_str))) > 1) { 
+  if (!empty($json_str)) { 
     
     require('../../lib/phplot-6.2.0/phplot.php');
     require_once 'gera_grafico_temp.php';
@@ -13,7 +13,7 @@
     require_once 'gera_grafico_heat.php';
   }
 ?>
-<div id="header"> <?php include("../layout/header.html");?> </div> 
+<div id="header"> <?php include("../layout/header.php");?> </div> 
 
     <main role="main" class="container-fluid">
       <div class="card text-white bg-info mb-12">  
@@ -35,7 +35,7 @@
             </div>
             
             <div class="col col-lg-6 col-md-6 col-sm-6">
-              <img src="../../assets/imgs/temperatura.png" >
+              <?php echo '<img src="../../assets/imgs/temperatura.png?'.date("YmdHis").'">'; ?>
             </div>
           </div>
 
@@ -47,7 +47,7 @@
             </div>
             
             <div class="col col-lg-6 col-md-6 col-sm-6">
-              <img src="../../assets/imgs/incidency_sun.png" >
+              <?php echo '<img src="../../assets/imgs/incidency_sun.png?'.date("YmdHis").'">'; ?>
             </div>
           </div>
 
@@ -58,7 +58,7 @@
             </div>
             
             <div class="col col-lg-6 col-md-6 col-sm-6">
-              <img src="../../assets/imgs/humidity.png" >
+              <?php echo '<img src="../../assets/imgs/humidity.png?'.date("YmdHis").'">'; ?>
             </div>
           </div>
 
@@ -69,7 +69,7 @@
             </div>
             
             <div class="col col-lg-6 col-md-6 col-sm-6">
-              <img src="../../assets/imgs/precipitation.png" >
+              <?php echo '<img src="../../assets/imgs/precipitation.png?'.date("YmdHis").'">'; ?>
             </div>
           </div>
 
@@ -80,7 +80,7 @@
             </div>
             
             <div class="col col-lg-6 col-md-6 col-sm-6">
-              <img src="../../assets/imgs/dew_point.png" >
+              <?php echo '<img src="../../assets/imgs/dew_point.png?'.date("YmdHis").'">'; ?>
             </div>
           </div>
 
@@ -91,7 +91,7 @@
             </div>
             
             <div class="col col-lg-6 col-md-6 col-sm-6">
-              <img src="../../assets/imgs/heat_index.png" >
+              <?php echo '<img src="../../assets/imgs/heat_index.png?'.date("YmdHis").'">'; ?>
             </div>
           </div>
 
