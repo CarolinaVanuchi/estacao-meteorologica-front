@@ -1,22 +1,9 @@
 <?php
 
 	$output_file = '../../assets/imgs/humidity.png';
-	$horas = array();
-	$valores = array();
-	$i = 0;
 	
-	foreach($json_str->data as $e) {
-		$horas[$i]      = $e->req_time;
-		$valores[$i]    = $e->humidity;
-		$i = $i + 1;
-	} 	
-	$horas = array();
-	$valores = array();
 	$data = array();
-	$i = 0;
-	$y = 0;
-
-	$n_points = count($json_str->data);	
+	
 	foreach($json_str->data as $e) {
 		$date_time = $e->req_date . ' ' . $e->req_time;
 		$valor	   = $e->humidity;
