@@ -29,7 +29,7 @@
           
         <div class="card-body text-dark bg-white">
         
-        <h5 class="card-title" style="margin-top: 35; ">Humidade (%) </h5>
+        <h5 class="card-title" style="margin-top: 35; ">Umidade (%) </h5>
           <div class="row">
             <div class="col col-lg-6 col-md-6 col-sm-6">
               <div id="table"> <?php include("../../config/index/humidity.php"); ?></div> 
